@@ -5,9 +5,11 @@ public class TC_001 extends BaseTest
 
 	public static void main(String[] args) throws Exception 
 	{
-		browserLaunch("chrome");
+		init();
 		
-		navigate("https://www.amazon.in");
+		browserLaunch("firefoxbrowser");
+		
+		navigate("bestbuyurl");
 		
 		maximizeWindow();
 		
@@ -25,7 +27,7 @@ public class TC_001 extends BaseTest
 		
 		windowForward();
 		
-		wait(4000);
+		wait(5000);
 		
 		windowRefresh();
 		
