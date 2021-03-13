@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [batchSuite]">
+  <test thread-count="5" name="batchTest(failed)">
+    <classes>
+      <class name="com.project.MavenMarchSelenium9_30AMBatch.LinksTesting1">
+        <methods>
+          <include name="linktesting1"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.project.MavenMarchSelenium9_30AMBatch.LinksTesting1 -->
+      <class name="com.project.MavenMarchSelenium9_30AMBatch.RadioButton1">
+        <methods>
+          <include name="radioButton1"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.project.MavenMarchSelenium9_30AMBatch.RadioButton1 -->
+    </classes>
+  </test> <!-- batchTest(failed) -->
+</suite> <!-- Failed suite [batchSuite] -->
