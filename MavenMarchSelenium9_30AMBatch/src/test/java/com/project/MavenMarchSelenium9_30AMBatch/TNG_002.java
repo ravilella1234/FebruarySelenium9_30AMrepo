@@ -6,6 +6,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 
 public class TNG_002 extends BaseTest
@@ -32,6 +33,7 @@ public class TNG_002 extends BaseTest
   @Test(groups = {"regression","sanity"})
   public void amazon() 
   {
+	 
 	  System.out.println("iam amazon testmethod....");
 	    selectOption("amazondropdown_id","Books");
 		test.log(LogStatus.PASS, "Selected the option Books by using locaotr :- "+ orProp.getProperty("amazondropdown_id"));
@@ -41,6 +43,8 @@ public class TNG_002 extends BaseTest
 		
 		clickElement("amazonsearchbutton_xpath");
 		test.log(LogStatus.INFO, "Clicked on Amazon search button By using locator :-" + orProp.getProperty("amazonsearchbutton_xpath"));
+		
+		 //throw new SkipException("Test is skipped....");
   }
 
   @AfterMethod(groups = {"regression","sanity"})
