@@ -35,6 +35,8 @@ public class BaseTest
 	public static ExtentReports report;
 	public static ExtentTest test;
 	public static String fileName;
+	public static String sheetName;
+	public static String testCaseName;
 	
 	static
 	{

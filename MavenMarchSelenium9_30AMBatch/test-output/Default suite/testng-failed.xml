@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.MavenMarchSelenium9_30AMBatch.TestDependencies">
+      <class name="excelDataDrivern.FaceBookwithDataProvider">
         <methods>
-          <include name="blue"/>
-          <include name="green"/>
-          <include name="orange"/>
-          <include name="white"/>
+          <include name="f" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.project.MavenMarchSelenium9_30AMBatch.TestDependencies -->
+      </class> <!-- excelDataDrivern.FaceBookwithDataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
