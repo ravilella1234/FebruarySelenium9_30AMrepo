@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="listners.TestNgListner"/>
-    <listener class-name="listners.RetryListener"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite thread-count="7" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="7" name="Test(failed)" parallel="methods">
     <classes>
-      <class name="com.project.MavenMarchSelenium9_30AMBatch.TNG_002">
+      <class name="grid.GridDemo">
         <methods>
-          <include name="endProcess"/>
-          <include name="startProcess"/>
-          <include name="amazon"/>
+          <include name="test2"/>
+          <include name="test3"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- com.project.MavenMarchSelenium9_30AMBatch.TNG_002 -->
+      </class> <!-- grid.GridDemo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
